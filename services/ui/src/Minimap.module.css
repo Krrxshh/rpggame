@@ -1,0 +1,33 @@
+.minimapContainer {
+  position: fixed;
+  bottom: 100px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(100, 100, 100, 0.3);
+  border-radius: 8px;
+  padding: 8px;
+  z-index: 100;
+}
+
+.minimap {
+  display: block;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #666;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.progress {
+  color: #88ff88;
+  font-size: 9px;
+}

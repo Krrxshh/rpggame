@@ -1,0 +1,162 @@
+.hud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  pointer-events: none;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  z-index: 100;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.playerInfo,
+.enemyInfo {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 12px 16px;
+  min-width: 180px;
+  backdrop-filter: blur(10px);
+}
+
+.playerInfo {
+  border-color: rgba(68, 255, 136, 0.3);
+}
+
+.enemyInfo {
+  border-color: rgba(255, 68, 68, 0.3);
+}
+
+.floorInfo {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(136, 136, 255, 0.3);
+  border-radius: 8px;
+  padding: 12px 24px;
+  backdrop-filter: blur(10px);
+}
+
+.floorNumber {
+  font-size: 24px;
+  font-weight: bold;
+  color: #8888ff;
+  text-shadow: 0 0 20px rgba(136, 136, 255, 0.5);
+}
+
+.turnNumber {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 4px;
+}
+
+.seed {
+  font-size: 10px;
+  color: #666;
+  margin-top: 4px;
+  font-family: monospace;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #aaa;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hpBar {
+  position: relative;
+  height: 24px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hpFill {
+  height: 100%;
+  transition: width 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 0 10px currentColor;
+}
+
+.hpFillEnemy {
+  height: 100%;
+  background: linear-gradient(90deg, #ff4444, #ff6666);
+  transition: width 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
+}
+
+.hpText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+.itemStatus {
+  font-size: 11px;
+  color: #888;
+  margin-top: 8px;
+}
+
+.enemyStats {
+  font-size: 10px;
+  color: #ff8888;
+  margin-top: 8px;
+  font-family: monospace;
+}
+
+.combatLog {
+  position: absolute;
+  bottom: 120px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  pointer-events: none;
+}
+
+.logEntry {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #fff;
+  animation: fadeIn 0.3s ease;
+  border-left: 3px solid #8888ff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stats {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 12px;
+  color: #666;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px 12px;
+  border-radius: 4px;
+}

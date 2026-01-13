@@ -1,0 +1,76 @@
+{
+  "version": "1.0.0",
+  "generated": "2026-01-14",
+  "summary": {
+    "total": 245,
+    "usable": 245,
+    "needsConversion": 0
+  },
+  "categories": {
+    "environment": {
+      "trees": [
+        { "id": "env-tree-common-1", "path": "Assets/Environment/glTF/CommonTree_1.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-tree-common-2", "path": "Assets/Environment/glTF/CommonTree_2.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-tree-common-3", "path": "Assets/Environment/glTF/CommonTree_3.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-tree-common-4", "path": "Assets/Environment/glTF/CommonTree_4.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-tree-common-5", "path": "Assets/Environment/glTF/CommonTree_5.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-tree-dead-1", "path": "Assets/Environment/glTF/DeadTree_1.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-tree-dead-2", "path": "Assets/Environment/glTF/DeadTree_2.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-tree-dead-3", "path": "Assets/Environment/glTF/DeadTree_3.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-tree-twisted-1", "path": "Assets/Environment/glTF/TwistedTree_1.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-tree-twisted-2", "path": "Assets/Environment/glTF/TwistedTree_2.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-pine-1", "path": "Assets/Environment/glTF/Pine_1.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-pine-2", "path": "Assets/Environment/glTF/Pine_2.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-pine-3", "path": "Assets/Environment/glTF/Pine_3.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-pine-4", "path": "Assets/Environment/glTF/Pine_4.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-pine-5", "path": "Assets/Environment/glTF/Pine_5.gltf", "ext": ".gltf", "usable": true, "role": "environment" }
+      ],
+      "rocks": [
+        { "id": "env-rock-round-1", "path": "Assets/Environment/glTF/Rock_Round_1.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-rock-round-2", "path": "Assets/Environment/glTF/Rock_Round_2.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-rock-square-1", "path": "Assets/Environment/glTF/Rock_Square_1.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-rock-square-2", "path": "Assets/Environment/glTF/Rock_Square_2.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-pebble-round-1", "path": "Assets/Environment/glTF/Pebble_Round_1.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-pebble-round-2", "path": "Assets/Environment/glTF/Pebble_Round_2.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-pebble-square-1", "path": "Assets/Environment/glTF/Pebble_Square_1.gltf", "ext": ".gltf", "usable": true, "role": "environment" }
+      ],
+      "vegetation": [
+        { "id": "env-bush-common", "path": "Assets/Environment/glTF/Bush_Common.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-bush-flowers", "path": "Assets/Environment/glTF/Bush_Common_Flowers.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-grass-short", "path": "Assets/Environment/glTF/Grass_Common_Short.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-grass-tall", "path": "Assets/Environment/glTF/Grass_Common_Tall.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-fern-1", "path": "Assets/Environment/glTF/Fern_1.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-plant-1", "path": "Assets/Environment/glTF/Plant_1.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-flower-3", "path": "Assets/Environment/glTF/Flower_3_Group.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-flower-4", "path": "Assets/Environment/glTF/Flower_4_Group.gltf", "ext": ".gltf", "usable": true, "role": "environment" },
+        { "id": "env-mushroom", "path": "Assets/Environment/glTF/Mushroom_Common.gltf", "ext": ".gltf", "usable": true, "role": "environment" }
+      ]
+    },
+    "characters": [
+      { "id": "char-hero-male", "path": "Assets/Character/Base Characters/Godot - UE/Superhero_Male_FullBody.gltf", "ext": ".gltf", "usable": true, "role": "character", "hasAnimations": false },
+      { "id": "char-hero-female", "path": "Assets/Character/Base Characters/Godot - UE/Superhero_Female_FullBody.gltf", "ext": ".gltf", "usable": true, "role": "character", "hasAnimations": false }
+    ],
+    "animations": [
+      { "id": "anim-library", "path": "Assets/Animation/Godot/AnimationLibrary_Godot_Standard.glb", "ext": ".glb", "usable": true, "role": "animation", "notes": "Contains humanoid animations - walk, run, idle, attack, etc." }
+    ],
+    "weapons": [
+      { "id": "wpn-axe-1", "path": "Assets/Weapons/GLTF/Axe_1.gltf", "ext": ".gltf", "usable": true, "role": "weapon" },
+      { "id": "wpn-axe-2", "path": "Assets/Weapons/GLTF/Axe_2.gltf", "ext": ".gltf", "usable": true, "role": "weapon" },
+      { "id": "wpn-sword-1", "path": "Assets/Weapons/GLTF/Sword_1.gltf", "ext": ".gltf", "usable": true, "role": "weapon" },
+      { "id": "wpn-sword-2", "path": "Assets/Weapons/GLTF/Sword_2.gltf", "ext": ".gltf", "usable": true, "role": "weapon" },
+      { "id": "wpn-staff-1", "path": "Assets/Weapons/GLTF/Staff_1.gltf", "ext": ".gltf", "usable": true, "role": "weapon" },
+      { "id": "wpn-hammer-1", "path": "Assets/Weapons/GLTF/Hammer_1.gltf", "ext": ".gltf", "usable": true, "role": "weapon" },
+      { "id": "wpn-spear-1", "path": "Assets/Weapons/GLTF/Spear_1.gltf", "ext": ".gltf", "usable": true, "role": "weapon" }
+    ],
+    "textures": [
+      { "id": "tex-bark-dead", "path": "Assets/Environment/Textures/Bark_DeadTree.png", "ext": ".png", "usable": true, "role": "texture" },
+      { "id": "tex-bark-dead-normal", "path": "Assets/Environment/Textures/Bark_DeadTree_Normal.png", "ext": ".png", "usable": true, "role": "texture" },
+      { "id": "tex-bark-normal", "path": "Assets/Environment/Textures/Bark_NormalTree.png", "ext": ".png", "usable": true, "role": "texture" },
+      { "id": "tex-leaves", "path": "Assets/Environment/Textures/Leaves.png", "ext": ".png", "usable": true, "role": "texture" },
+      { "id": "tex-grass", "path": "Assets/Environment/Textures/Grass.png", "ext": ".png", "usable": true, "role": "texture" },
+      { "id": "tex-rocks", "path": "Assets/Environment/Textures/Rocks_Diffuse.png", "ext": ".png", "usable": true, "role": "texture" },
+      { "id": "tex-weapon", "path": "Assets/Weapons/Texture/Texture.png", "ext": ".png", "usable": true, "role": "texture" }
+    ]
+  },
+  "conversionTasks": []
+}
