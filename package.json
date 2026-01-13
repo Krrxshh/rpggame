@@ -12,10 +12,13 @@
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.5.0",
     "@react-three/postprocessing": "^3.0.4",
+    "glsl-noise": "^0.0.0",
+    "glslify": "^7.1.1",
     "nanoid": "^5.1.6",
     "next": "16.1.1",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "stats-gl": "^3.8.0",
     "three": "^0.182.0",
     "zustand": "^5.0.10"
   },
@@ -30,7 +33,9 @@
     "@types/three": "^0.182.0",
     "eslint": "^9",
     "eslint-config-next": "16.1.1",
+    "eslint-config-prettier": "^10.1.8",
     "jsdom": "^27.4.0",
+    "prettier": "^3.7.4",
     "tailwindcss": "^4",
     "typescript": "^5",
     "vitest": "^4.0.17"
