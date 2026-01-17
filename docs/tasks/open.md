@@ -1,27 +1,59 @@
 # Open Tasks
 
-## High Priority
-- [ ] Wire WorldTimeProvider into main game scene
-- [ ] Integrate asset models with environment spawner
-- [ ] Add rest UI when near campfire
+## Immediate Priority
+
+### Skeletal Retargeting System
+- [ ] Implement runtime bone remapping for animation library
+- [ ] Add fallback procedural animations for missing clips
+- [ ] Create skeleton analyzer tool
+
+### Sound Integration
+- [ ] Create AudioManager service
+- [ ] Wire boss attack soundId to audio playback
+- [ ] Implement spatial audio with distance falloff
+- [ ] Add ambient sounds (wind, water, fire)
+
+### Asset Conversion Pipeline
+- [ ] Batch convert FBX to GLTF where needed
+- [ ] Optimize textures (compress, generate mipmaps)
+- [ ] Create asset bundling for faster loading
 
 ## Medium Priority
-- [ ] Implement WebGPU path tracer (experimental)
-  - Requires: WebGPU support, PathTracingRenderer
-  - Gate behind `--enable-experimental-pathtracer` flag
-- [ ] Retarget animation skeletons for imported characters
-  - Tool: Blender or Mixamo
-- [ ] Add sound effect hooks for environment & combat
 
-## Low Priority
-- [ ] Convert any future Unity/Unreal assets
-  - Use: `FBX2glTF` or Blender export
-  - Command: `npx fbx2gltf -i input.fbx -o output.glb`
-- [ ] Add equipment system for weapons
-- [ ] Implement more weather types (snow, fog only)
-- [ ] Add procedural dungeon interiors
+### Combat Polish
+- [ ] Add hit stop (brief pause on impact)
+- [ ] Implement target lock-on system
+- [ ] Add weapon trails VFX
+- [ ] Create stagger animations
 
-## Future
-- [ ] Mobile touch controls
-- [ ] Multiplayer sync (experimental)
-- [ ] Procedural quests
+### Environment
+- [ ] Implement terrain heightmap support
+- [ ] Add grass wind shader
+- [ ] Create water caustics effect
+- [ ] Implement dynamic shadows for vegetation
+
+### UI/UX
+- [ ] Add inventory screen
+- [ ] Create equipment menu
+- [ ] Implement settings panel
+- [ ] Add tutorial overlays
+
+## Long-term
+
+### WebGPU Integration
+- [ ] Research WebGPU availability
+- [ ] Create compute shader pipeline
+- [ ] Implement path tracing prototype
+- [ ] Add hardware ray-traced reflections
+
+### Multiplayer Foundation
+- [ ] Design network architecture
+- [ ] Implement state synchronization
+- [ ] Add lobby system
+- [ ] Create co-op mode
+
+### Mobile Support
+- [ ] Touch controls overlay
+- [ ] Performance optimization for mobile GPU
+- [ ] Reduced quality presets
+- [ ] Virtual joystick input

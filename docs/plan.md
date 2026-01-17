@@ -8,40 +8,79 @@ Enhanced from action RPG to open-world exploration with:
 - Safe zones and resting mechanics
 - Improved shaders and camera
 
-## New Systems Added
+## New Systems Added (v2.0.0)
 
-### Asset Pipeline
+### Character & Animation Pipeline
 ```
-assetRegistry.ts → getEnvironmentAssets(), getCharacterAssets()
-assetLoaders.ts → loadGLTF(), loadFBX(), animation support
-asset_manifest.json → 245 usable assets cataloged
-```
-
-### Day/Night & Weather
-```
-DayNightCycle.ts → Sun position, colors, phases
-WeatherSystem.ts → Rain, fog, wetness transitions
-WorldTimeManager.tsx → React context, dynamic lighting
-RainSystem.tsx → Instanced particles
-Clouds.tsx → Procedural shader clouds
+CharacterRig.tsx → Skeleton loading, animation mixer, bone search
+  - Supports RightHand, Hand_R, R_Hand variants for weapon attach
+  - Procedural fallback for missing skeletons
+  - Animation state machine (idle, walk, run, attack, dodge, block)
 ```
 
-### Safe Zones & Resting
+### AAA Camera System
 ```
-safeZone.ts → Zone detection, enemy restrictions, safe mode
-resting.ts → HP recovery, time advancement
-```
-
-### Camera & Input Fixes
-```
-ImprovedCamera.tsx → Pointer lock, pitch clamp, collision
-getCameraRelativeDirection() → WASD relative to camera
+AAACamera.tsx → Third-person with collision
+  - Pointer lock with smooth interpolation
+  - Raycast collision to prevent clipping
+  - Attack zoom, aim mode orbit
+  - Shake on hit with decay
 ```
 
-### New Shaders
+### Weapon System
 ```
-pbr_wetness.frag → Roughness modulation for rain
-volumetric_fog.frag → Depth-based noise fog
+weaponSystem.ts → Stats, swing arcs, hit windows
+  - Timed collision sweeps
+  - Weapon type transforms
+  - Combo chain support
+```
+
+### Physics Upgrade
+```
+enhancedPhysics.ts → Capsule collision, slopes
+  - Slope limit with slide prevention
+  - Ground friction vs air friction
+  - Knockback and impulse system
+```
+
+### Boss Templates
+```
+bossTemplate.ts → Movesets and phases
+  - Telegraph → Windup → Execute → Recover
+  - Combo patterns
+  - Enrage at HP threshold
+  - Parry stagger bonus
+```
+
+### Environment Upgrades
+```
+Water.tsx → Shader-based waves, fresnel, foam
+VolumetricFog.tsx → Noise-based depth fog
+DenseVegetation.tsx → Instanced trees/rocks/grass with LOD
+```
+
+### Post-Processing
+```
+PostProcessing.tsx → Quality presets
+  - Bloom, DOF, motion blur
+  - FXAA/SMAA antialiasing
+  - Vignette, film grain
+```
+
+### UI Polish
+```
+EnhancedUI.tsx → Premium screens
+  - Title: Animated particles, seed selector
+  - Death: Stats summary, retry, copy seed
+  - HUD: Health bars, quickslots, minimap
+```
+
+### Input System
+```
+inputManager.ts → Centralized input
+  - Pointer lock management
+  - Keybinding configuration
+  - Attack hold detection for heavy attacks
 ```
 
 ## Asset Manifest Summary
@@ -55,10 +94,15 @@ volumetric_fog.frag → Depth-based noise fog
 | Weapons | 83+ | GLTF |
 | Textures | 20+ | PNG |
 
-## Ray Tracing Note
-Real hardware-accelerated ray tracing (RTX-style) requires WebGPU + platform support. Current implementation uses:
-- Screen-space reflections (SSR)
-- Enhanced PBR materials
-- Wetness-driven specular
+## TODO: Skeletal Retargeting
+- Some animation clips may need retargeting to character rigs
+- Log warnings for skeleton mismatches
+- Implement runtime bone remapping
 
-For future path tracing, see `docs/tasks/open.md` for WebGPU integration task.
+## TODO: Sound Hooks
+- VFX triggers emit sound IDs
+- Boss attacks have soundId fields
+- Implement audio manager integration
+
+## TODO: WebGPU Path Tracing
+For future hardware ray tracing, see `docs/tasks/open.md`.

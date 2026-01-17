@@ -151,8 +151,20 @@ export default function GamePage() {
             floorNumber={actionStore.enemiesDefeated + 1}
             seed={actionStore.seed}
             enemiesDefeated={actionStore.enemiesDefeated}
-            skills={hudSkills}
-            potions={hudPotions}
+            skills={actionStore.skillStates.map((s, i) => {
+              const skillDef = require('../../services/game-engine/src/skills').SKILLS[s.skillId];
+              return {
+                id: s.skillId,
+                name: s.skillId,
+                cooldown: s.currentCooldown,
+                maxCooldown: skillDef?.cooldown || 5,
+                type: (i < 2 ? 'magic' : 'strength') as 'magic' | 'strength',
+              };
+            })}
+            potions={[
+              { id: 'health', name: 'Health Potion', count: actionStore.inventory.items.find(i => i.itemId === 'healthPotion')?.quantity || 0, slot: 0, type: 'health' as const },
+              { id: 'stamina', name: 'Stamina Elixir', count: actionStore.inventory.items.find(i => i.itemId === 'staminaElixir')?.quantity || 0, slot: 1, type: 'stamina' as const },
+            ]}
             isBlocking={actionStore.player.isBlocking}
             isDodging={actionStore.player.isDodging}
             isAttacking={actionStore.player.isAttacking}
